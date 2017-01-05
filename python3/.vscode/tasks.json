@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "command": "python3",
+    "isShellCommand": true,
+    "showOutput": "always",
+    "options": {
+        "env": {
+            "PYTHONIOENCODING": "UTF-8"
+        }
+    },
+    "tasks": [
+        {
+            "taskName": "run",
+            "suppressTaskName":true,
+            "isBuildCommand": true,
+            "args": ["${file}"]
+        },
+        {
+            "taskName": "test",
+            "suppressTaskName":true,
+            "isTestCommand": true,
+            "args": ["-m", "unittest", "discover", "-v"]
+        }
+    ]
+}

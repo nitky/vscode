@@ -1,0 +1,26 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.debug.continue",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.debug.start",
+        "when": "!inDebugMode"
+    },
+    {
+        "key": "shift+cmd+t",
+        "command": "python.runtests",
+        "when": "editorLangId == python"
+    },
+    {
+        "key": "cmd+s",
+        "command": [
+            "python.sortImports",
+            "workbench.action.files.save"
+        ],
+        "when": "editorLangId == python"
+    }
+]

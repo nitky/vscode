@@ -1,0 +1,16 @@
+// 既定の設定とユーザー設定を上書きするには、このファイル内に設定を挿入します
+{
+    // インタプリタにpython3を使用する
+    "python.pythonPath": "python3",
+    // 自動フォーマットにyapfを使用する
+    "python.formatting.provider": "yapf",
+    // unittestでのテストを有効にする
+    "python.unitTest.unittestEnabled": true,
+    // テストの詳細表示とテストディスカバリとを有効にする
+    "python.unitTest.unittestArgs": [
+        "discover",
+        "-v"
+    ],
+    // 保存時に自動フォーマット
+    "editor.formatOnSave": true
+}
